@@ -25,14 +25,18 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
-
+`.map` goes through the whole array and returns a new one. `.forEach` just iterates through the array.
 2. Explain the difference between a callback and a higher order function.
-
+A function is called when the name of the function is called, but a method can only be called by the object it resides in.
 3. What is closure?
-
+Closure is a nested function, where the nested function can access its parent's variables due to being lexically scoped.
 4. Describe the four rules of the 'this' keyword.
-
+Window binding is when it isn't specified to anything and `this` will refer to `Window` or the global scope.
+Implicitly binding is when it refers to the object to the left of the dot calling the function. For example, `myObject.toString()`, `this` would refer to `myObject`.
+New binding is when you instantiate a new object. For example, `const newObj = new Object()`;
+Explicit binding is when you use the `.call()` or `.apply()` function to define the object. `this` would be what is inside the call, `myObject.call(otherObject)`, otherObject would be `this`.
 5. Why do we need super() in an extended class?
+super() is needed to instantiate the attributes into the parent class.
 
 ### Task 1 - Project Set up
 
